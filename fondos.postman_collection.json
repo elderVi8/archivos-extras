@@ -1,0 +1,479 @@
+{
+	"info": {
+		"_postman_id": "7d232539-2427-4ad9-bc68-4b9f1c598937",
+		"name": "fondos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15126350"
+	},
+	"item": [
+		{
+			"name": "create rubro",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Test\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/rubros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rubros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All rubros",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/rubros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rubros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "byId rubros",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/rubros/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rubros",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update rubro",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Hospedaje\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/rubros/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rubros",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete rubros",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/rubros/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rubros",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create proyecto",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \r\n  \"nombre\": \"Construcción de Parque de perros\",\r\n  \"municipio\": \"San Jose Pinula\",\r\n  \"departamento\": \"Guatemala\",\r\n  \"fecha_inicio\": \"2025-09-15\",\r\n  \"fecha_fin\": \"2025-12-15\",\r\n  \"rubroIds\": [1]  \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/proyecto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"proyecto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all proyecto",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/proyecto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"proyecto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "byId proyecto",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/proyecto/P003",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"proyecto",
+						"P003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update proyecto",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Construcción de pozo\",\r\n    \"municipio\": \"San Juan\",\r\n    \"departamento\": \"Alta Verapaz\",\r\n    \"fecha_inicio\": \"2025-09-15\",\r\n    \"fecha_fin\": \"2025-12-15\",\r\n    \"rubroIds\": [\r\n        1,2\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/proyecto/P001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"proyecto",
+						"P001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete proyecto",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/proyecto/P003",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"proyecto",
+						"P003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create donacion",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"proyecto_rubro_id\": 3,\r\n  \"nombre_donante\": \"EPA\",\r\n  \"tipo_donante\": \"Organización\",\r\n  \"monto\": 500.00,\r\n  \"fecha_donacion\": \"2025-09-02\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/donacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"donacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all donacion",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/donacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"donacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "byId donacion",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/donacion/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"donacion",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update donacion",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"proyecto_rubro_id\": 1,\r\n  \"nombre_donante\": \"Juan David Pérez\",\r\n  \"tipo_donante\": \"Persona\",\r\n  \"monto\": 600.00,\r\n  \"fecha_donacion\": \"2025-09-02\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/donacion/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"donacion",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete donacion",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/donacion/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"donacion",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create compra",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"proyecto_id\": \"P001\",\r\n  \"nombre_proveedor\": \"Almuerzos S.A.\",\r\n  \"fecha_orden\": \"2025-09-03\",\r\n  \"descripcion\": \"alimentación para equipo de campo\",\r\n  \"rubros\": [\r\n    {\r\n      \"proyecto_rubro_id\": 1,\r\n      \"monto_asignado\": 250.00\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/compra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"compra"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all compra",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/compra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"compra"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "byID compra",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/compra/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"compra",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
